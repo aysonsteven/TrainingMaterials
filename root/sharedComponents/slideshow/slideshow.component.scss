@@ -10,6 +10,11 @@
     background: #2f2f2f82;
     color: #fff;
     padding: 5px 25px;
+   p{
+     color: #e8e8e8;
+     font-size: 14px;
+
+   }
  }
 }
 
@@ -47,4 +52,8 @@
 
 .fake-image.main {
     height: 150px;
+}
+
+.hidden{
+  display: none;
 }
