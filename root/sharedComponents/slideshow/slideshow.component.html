@@ -1,0 +1,17 @@
+            <section class="slider" *ngFor="let x of slider.items">
+                <div *ngIf="slider.selected == x.uniqueId">
+                  <div class="slides fake-image"><img [src]="x.imagePath" [alt]="x.title"></div>
+                  <div class="description">
+                    <h2> {{ x.title }}</h2>
+                    <p>{{ x.description }}</p>
+
+                    <ul class="slider-pagination" >
+                      <li *ngFor="let page of slider.items; let i = index;" [id]="x.uniqueId" [class.active]="i+1 == slider.selected" (click)="slider.selected = i+1"></li>
+                      <!--<li class="active"></li>-->
+                      <!--<li></li>-->
+                      <!--<li></li>-->
+                      <!--<li></li>-->
+                    </ul>
+                  </div>
+                </div>
+            </section>

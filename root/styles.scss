@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #efefef;
+}
+.fake-image {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.fake-image.logo {
+    width: 25%;
+    height: 25%;
+}
